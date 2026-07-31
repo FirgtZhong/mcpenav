@@ -256,4 +256,29 @@ function switchNightMode() {
         document.body.classList.remove('night');
         document.cookie = "night=0;path=/"
     }
+    updateNightToggleIcon();
+}
+
+//页面加载时应用已保存的夜间模式偏好
+function applyNightModeOnLoad() {
+    var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
+    if (night == '1') {
+        document.body.classList.add('night');
+    }
+    updateNightToggleIcon();
+}
+
+//更新切换按钮图标状态
+function updateNightToggleIcon() {
+    var isNight = document.body.classList.contains('night');
+    var btns = document.querySelectorAll('.night-toggle');
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].classList.toggle('is-night', isNight);
+    }
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyNightModeOnLoad);
+} else {
+    applyNightModeOnLoad();
 }

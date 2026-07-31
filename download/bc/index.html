@@ -2,7 +2,6 @@
 <html lang="zh-CN">
 
 <head>
-  <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -61,12 +60,15 @@
   <!-- 直接添加html内容即可 -->
 <!-- 可设置多行 -->
   
-<meta name="generator" content="Hexo 7.3.0"></head>
-
+<meta name="generator" content="Hexo 7.3.0">
 </head>
 
 
 <body class="page-body boxed-container">
+  <button class="night-toggle" onclick="switchNightMode()" title="切换夜间模式" aria-label="切换夜间模式">
+    <svg class="icon-sun" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 320a192 192 0 1 0 0 384 192 192 0 0 0 0-384z m0 320a128 128 0 1 1 0-256 128 128 0 0 1 0 256zM512 96a32 32 0 0 1 32 32v64a32 32 0 0 1-64 0V128a32 32 0 0 1 32-32zM512 768a32 32 0 0 1 32 32v64a32 32 0 0 1-64 0v-64a32 32 0 0 1 32-32zM96 512a32 32 0 0 1 32-32h64a32 32 0 0 1 0 64H128a32 32 0 0 1-32-32zM768 512a32 32 0 0 1 32-32h64a32 32 0 0 1 0 64h-64a32 32 0 0 1-32-32zM182.2 182.2a32 32 0 0 1 45.2 0l45.2 45.2a32 32 0 1 1-45.2 45.2L182.2 227.4a32 32 0 0 1 0-45.2zM706.4 706.4a32 32 0 0 1 45.2 0l45.2 45.2a32 32 0 0 1-45.2 45.2l-45.2-45.2a32 32 0 0 1 0-45.2zM182.2 841.8a32 32 0 0 1 0-45.2l45.2-45.2a32 32 0 1 1 45.2 45.2l-45.2 45.2a32 32 0 0 1-45.2 0zM706.4 317.6a32 32 0 0 1 0-45.2l45.2-45.2a32 32 0 0 1 45.2 45.2l-45.2 45.2a32 32 0 0 1-45.2 0z"/></svg>
+    <svg class="icon-moon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M614.4 51.2a51.2 51.2 0 0 0-48.6 67.6 358.4 358.4 0 0 1-466 466 51.2 51.2 0 0 0-67.6 48.6C53.8 832.4 254 972.8 486.4 972.8a486.4 486.4 0 0 0 128-955.6 51.2 51.2 0 0 0 0-34zM486.4 870.4a384 384 0 0 1-280-121.9 461 461 0 0 0 509.6-558A384 384 0 0 1 486.4 870.4z"/></svg>
+  </button>
   <nav class="navbar horizontal-menu navbar-fixed-top">
     <div class="navbar-inner">
       <div class="navbar-brand">
@@ -84,34 +86,27 @@
       <div class="row">
         <div class="col-md-12">
           <div class="panel panel-default">
-            
+
             <h1 class="text-gray">Bingo Client</h1>
             <div class="panel-body">
-              <div class="row">
-                <div class="col-sm-12">
-                  <blockquote>
-<h4>一个0.14版本MCPE客户端</h4>
-<p><h1><a href="">最新版本3.1.9-Android下载链接</a></h1></p>
-<p><h1><a href="https://files.firgt.cn/MCPENAV%E5%AF%BC%E8%88%AA%E7%AB%99%E8%B5%84%E6%BA%90%E7%9B%98/Bingo%20Cilent%E5%AE%A2%E6%88%B7%E7%AB%AF/%E7%AC%AC%E4%B8%89%E4%BB%A3-Bingo%20Cilent/Bingo%20Cilent%20v3.1.9_armv7a_Android%E5%AD%90%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8%E5%8F%AF%E4%BF%AE%E5%A4%8D%E5%AE%BD%E5%AD%97(1).APK">最新版本3.1.9-Windows安卓子系统专用版下载链接</a></h1></p>
-<br>
-<p><h1><a href="https://files.firgt.cn/MCPENAV%E5%AF%BC%E8%88%AA%E7%AB%99%E8%B5%84%E6%BA%90%E7%9B%98/Bingo%20Cilent%E5%AE%A2%E6%88%B7%E7%AB%AF/%E7%AC%AC%E4%B8%89%E4%BB%A3-Bingo%20Cilent/BingoCilent%20Windows%2010%20Editon%20V1.0.01%20%EF%BC%880.14.3).7z">最新版本3.1.9-Windows10版下载链接</a></h1></p>
-<p><h1><a href="https://files.firgt.cn/MCPENAV%E5%AF%BC%E8%88%AA%E7%AB%99%E8%B5%84%E6%BA%90%E7%9B%98/Bingo%20Cilent%E5%AE%A2%E6%88%B7%E7%AB%AF/%E7%AC%AC%E4%B8%89%E4%BB%A3-Bingo%20Cilent/BingoCilent%20Windows10%20v1.0.0.1%20%E7%AE%80%E6%98%93%E5%AE%89%E8%A3%85(2).zip">最新版本3.1.9-Windows10版安装教程</a></h1></p>
-<p><h2><a href="https://files.firgt.cn/MCPENAV%E5%AF%BC%E8%88%AA%E7%AB%99%E8%B5%84%E6%BA%90%E7%9B%98/Bingo%20Cilent%E5%AE%A2%E6%88%B7%E7%AB%AF">更多历史版本</a></h2></p>
-<p><h2><a href="https://qm.qq.com/cgi-bin/qm/qr?k=OzKWjKJbCjfHQO4PZECcCwpXh-KxI7lq&jump_from=webapi&authKey=zAZbZy9hnZvDYHePfK+ciFH1l/QWjazszBG0em/IVeBnaWb9qgu/RpHqgekA5uSq">加入QQ群交流:952272943</a></h2></p>
-</blockquote>
+              <div class="hosting-info">
+                <h2>Bingo Client</h2>
+                <div class="info-section">
+                  <p class="slogan-title">一个 0.14 版本 MCPE 客户端 · 最新版本 3.1.9</p>
+                  <p><span class="info-label">Android：</span><a href="">下载链接</a></p>
+                  <p><span class="info-label">Win 安卓子系统：</span><a href="https://files.firgt.cn/MCPENAV%E5%AF%BC%E8%88%AA%E7%AB%99%E8%B5%84%E6%BA%90%E7%9B%98/Bingo%20Cilent%E5%AE%A2%E6%88%B7%E7%AB%AF/%E7%AC%AC%E4%B8%89%E4%BB%A3-Bingo%20Cilent/Bingo%20Cilent%20v3.1.9_armv7a_Android%E5%AD%90%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8%E5%8F%AF%E4%BF%AE%E5%A4%8D%E5%AE%BD%E5%AD%97(1).APK">专用版下载</a></p>
+                  <p><span class="info-label">Windows 10：</span><a href="https://files.firgt.cn/MCPENAV%E5%AF%BC%E8%88%AA%E7%AB%99%E8%B5%84%E6%BA%90%E7%9B%98/Bingo%20Cilent%E5%AE%A2%E6%88%B7%E7%AB%AF/%E7%AC%AC%E4%B8%89%E4%BB%A3-Bingo%20Cilent/BingoCilent%20Windows%2010%20Editon%20V1.0.01%20%EF%BC%880.14.3).7z">下载</a> ｜ <a href="https://files.firgt.cn/MCPENAV%E5%AF%BC%E8%88%AA%E7%AB%99%E8%B5%84%E6%BA%90%E7%9B%98/Bingo%20Cilent%E5%AE%A2%E6%88%B7%E7%AB%AF/%E7%AC%AC%E4%B8%89%E4%BB%A3-Bingo%20Cilent/BingoCilent%20Windows10%20v1.0.0.1%20%E7%AE%80%E6%98%93%E5%AE%89%E8%A3%85(2).zip">安装教程</a></p>
+                </div>
+                <div class="info-section">
+                  <p><span class="info-label">历史版本：</span><a href="https://files.firgt.cn/MCPENAV%E5%AF%BC%E8%88%AA%E7%AB%99%E8%B5%84%E6%BA%90%E7%9B%98/Bingo%20Cilent%E5%AE%A2%E6%88%B7%E7%AB%AF">查看更多</a></p>
+                  <p><span class="info-label">QQ群：</span><a href="https://qm.qq.com/cgi-bin/qm/qr?k=OzKWjKJbCjfHQO4PZECcCwpXh-KxI7lq&jump_from=webapi&authKey=zAZbZy9hnZvDYHePfK+ciFH1l/QWjazszBG0em/IVeBnaWb9qgu/RpHqgekA5uSq">952272943</a></p>
                 </div>
               </div>
-              <div class="col-md-8">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <br /><blockquote><p>如有我们侵犯了您的合法权利或者需要收录您的服务器，请<a target="_blank" rel="noopener" href="https://firgt.eu.org/about">联系站长</a></p></blockquote>
-                  </div>
-                </div>
-                <br>
-              </div>
+              <blockquote class="hosting-contact">
+                <p>如有我们侵犯了您的合法权利或者需要收录您的服务器，请<a target="_blank" rel="noopener" href="https://firgt.eu.org/about">联系站长</a></p>
+              </blockquote>
             </div>
-            
-            </div>
+
           </div>
         </div>
       </div>

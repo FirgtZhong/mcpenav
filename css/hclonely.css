@@ -412,3 +412,139 @@ body.night .go-up a:hover {
 .sidebar-menu .main-menu a>i{
   width: 16px;
 }
+
+/* ===== Hosting 服务器介绍页统一样式 ===== */
+.hosting-info{
+  padding: 5px 0;
+}
+.hosting-info h2{
+  font-size: 22px;
+  margin: 5px 0 20px;
+  font-weight: 600;
+  color: #373e4a;
+}
+.hosting-info .info-section{
+  margin-bottom: 18px;
+  padding: 12px 15px;
+  background: #f9f9f9;
+  border-left: 4px solid #2188ff;
+  border-radius: 4px;
+}
+.hosting-info .info-section p{
+  margin: 5px 0;
+  line-height: 1.8;
+}
+.hosting-info .info-label{
+  display: inline-block;
+  min-width: 70px;
+  font-weight: 600;
+  color: #555;
+}
+.hosting-info .server-slogan{
+  margin-top: 5px;
+  padding: 12px 15px;
+  background: #fafafa;
+  border-left: 4px solid #ffc107;
+  border-radius: 4px;
+  color: #666;
+}
+.hosting-info .server-slogan p{
+  margin: 4px 0;
+  line-height: 1.8;
+}
+.hosting-info .server-slogan .slogan-title{
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+.hosting-info pre{
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 12px 15px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: "Source Code Pro", Consolas, Monaco, Menlo, monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+}
+.hosting-contact{
+  margin-top: 25px;
+  padding: 12px 15px;
+  background: #fff8e1;
+  border-left: 4px solid #ffc107;
+  border-radius: 4px;
+}
+.hosting-contact p{
+  margin: 0;
+  line-height: 1.8;
+}
+body.night .hosting-info h2{
+  color: #f8f8f8;
+}
+body.night .hosting-info .info-section{
+  background: #2c2e2f;
+  border-left-color: #2188ff;
+}
+body.night .hosting-info .info-label{
+  color: #d6d6d6;
+}
+body.night .hosting-info .server-slogan{
+  background: #232323;
+  color: #a9a9a9;
+}
+body.night .hosting-info .server-slogan .slogan-title{
+  color: #d6d6d6;
+}
+body.night .hosting-info pre{
+  background: #2c2e2f;
+  border-color: #414344;
+  color: #ccc;
+}
+body.night .hosting-contact{
+  background: #2c2e2f;
+  border-left-color: #ffc107;
+}
+
+/* ===== 夜间模式浮动切换按钮 ===== */
+.night-toggle{
+  position: fixed;
+  right: 18px;
+  bottom: 60px;
+  z-index: 1000;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff;
+  color: #707070;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.25s, color 0.25s, box-shadow 0.25s;
+  padding: 0;
+}
+.night-toggle:hover{
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  color: #2188ff;
+}
+.night-toggle svg{
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+body.night .night-toggle{
+  background: #2c2e2f;
+  color: #f5a623;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+body.night .night-toggle:hover{
+  color: #ffc107;
+}
+.night-toggle .icon-moon{ display: none; }
+.night-toggle .icon-sun{ display: block; }
+.night-toggle.is-night .icon-moon{ display: block; }
+.night-toggle.is-night .icon-sun{ display: none; }
