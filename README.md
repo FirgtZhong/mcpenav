@@ -1,5 +1,7 @@
 # McPenav 网页文件
 
+[English](README.en.md) · [Русский](README.ru.md) · [繁體中文](README.zh-Hant.md)
+
 McPenav（Minecraft PE Navigation）是最早为我的世界 0.14 玩家整理的综合性网页导航站，提供服务器入口、原版与模组客户端下载，以及一些实用工具。
 
 在线体验：https://mcpenav.top/
@@ -20,10 +22,10 @@ McPenav（Minecraft PE Navigation）是最早为我的世界 0.14 玩家整理�
 **MCPEMAP · 服务器收录站**
 https://mc.mcpenav.top/
 
-收录 Minecraft 便携版 0.13～1.1 各系列服务器，人工审核、免费收录，支持按版本、类型、标签筛选
+同一个域名，前缀 收录 Minecraft 便携版 0.13～1.1 各系列服务器，人工审核、免费收录，支持按版本、类型、标签筛选。
 
 服务器列表、人气排行、统计与在线数据以该站为准；本仓库的主站页面仅作入口与历史留存。
 
 ---
 
-Minecraft 为 Mojang Studios 商标，本项目与 Mojang Studios / Microsoft 无关联
+Minecraft 为 Mojang Studios 商标，本项目与 Mojang Studios / Microsoft 无关联。
